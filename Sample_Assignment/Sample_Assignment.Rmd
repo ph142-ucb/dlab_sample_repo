@@ -1,5 +1,5 @@
 ---
-title: "Lab 1: Introduction to R and RStudio"
+title: "Sample Assignment for DLAB"
 output: pdf_document
 ---
 
