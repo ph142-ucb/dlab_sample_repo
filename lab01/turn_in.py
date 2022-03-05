@@ -154,7 +154,7 @@ if __name__ == '__main__':
 
     client = APIClient()
     email = input("Please provide the email address on your Gradescope account: ")
-    password = input('Password: ')
+    password = getpass.getpass('Password: ')
     try:
         assert email == "dlab@berkeley.edu"
         assert password == "password123"
