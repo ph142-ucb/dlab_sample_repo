@@ -1,0 +1,74 @@
+---
+title: "Lab 1: Introduction to R and RStudio"
+output: pdf_document
+---
+
+
+Hello! Welcome to the sample assignment. This will be a brief Rmd just to get you comfortable with how PH 142 students complete their assignments and get used to the workflow.
+
+As mentioned in the document, we use RMarkdown because of its ability to combine Markdown text with R code chunks. This makes it easier for us to explain the concept we are learning at the time in conjunction with the code associated with that chunk. For example:
+
+A `print` function outputs whatever you provide as the argument. Try replacing the contents inside of the `print` function with your favorite word.
+
+```{r}
+print("supercalifragilisticexpialidocious")
+```
+
+Try replacing the `print` function in the next code chunk with your second most favorite word.
+
+```{r}
+print("pneumonoultramicroscopicsilicovolcanoconiosis")
+```
+
+--------------------------------------------------------------------------------
+
+In addition, we are able to use the Ottr Grader features to provide (not really) instant feedback to the students on their code after it's written. They can do it multiple times until they get the correct answer.
+
+Before the examples, please run this line of code to load the `testthat` library, a dependency of Ottr Grader.
+
+```{r setup, include = FALSE}
+library(testthat)
+```
+
+Assign the best number in the world to the variable `best_number` in the code chunk below. (Hint: PH 142)
+
+```{r}
+best_number <- NULL # YOUR CODE HERE
+```
+
+```{r}
+. = ottr::check("tests/best_number.R")
+```
+
+Fill in the following blank by assigning the word (as a string) to the variable `blank`:
+
+`import numpy as _____`
+
+```{r}
+blank <- NULL # YOUR CODE HERE
+```
+
+```{r}
+. = ottr::check("tests/blank.R")
+```
+
+--------------------------------------------------------------------------------
+
+Once a student finishes their assignment, they must use the `turn_in.py` script in order to submit to Gradescope.
+- First, make sure that you have knitted your file by clicking on the "Knit" button on top of the Source.
+- Next, type in the following command into the terminal (not the console!)
+
+```
+cd; cd dlab_sample_repo/Sample_Assignment/turn_in.py
+```
+
+You should be prompted if you have knit your file, then for your Gradescope credentials. For the purposes of this example, we have hardcoded the script to only take in the following credentials (anything else will result in an error):
+- User: dlab@berkeley.edu
+- Pass: password123
+
+**Note**: When typing in the password, the characters you type will not show up in the terminal. This is a security feature for students (and staff) to prevent revealing their passwords when typing it in.
+
+--------------------------------------------------------------------------------
+
+And that's it! This is pretty much the full abridged version of a student's typical workflow. `lab01` has also been provided to show a real example of what students might have to go through.
+
